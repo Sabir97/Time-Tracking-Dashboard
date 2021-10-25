@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="report">
+        <div id="report-id">
+          <img
+            id="profile-pic"
+            src="./images/image-jeremy.png"
+            alt="Profile Pic"
+          />
+          <h4 style="color: hsl(236, 100%, 87%)">Report for</h4>
+          <h1>Jeremy Robson</h1>
+        </div>
+
+        <div id="time-selection">
+          <div class="time-btn">Daily</div>
+          <div class="time-btn" style="color: white">Weekly</div>
+          <div class="time-btn">Monthly</div>
+        </div>
+      </div>
+
+      <div id="work">
+        <img src="./images/icon-work.svg" alt="" />
+        <div id="work-details">
+          <div class="title">Work</div>
+          <div class="options">...</div>
+          <h1 class="time">
+            5hrs
+            <!-- daily -->
+          </h1>
+          <div class="prev">
+            Last Day - 7hrs
+            <!-- daily -->
+          </div>
+          <!-- <h5>
+        32hrs  weekly 
+        Previous - 36hrs weekly 
+        103hrs  monthly 
+        Previous - 128hrs monthly 
+      </h5> -->
+        </div>
+      </div>
+
+      <div id="play">
+        <img src="./images/icon-play.svg" alt="play" />
+        <div id="play-details">
+          <div class="title">Play</div>
+          <div class="options">...</div>
+          <div class="time">10hrs</div>
+          <div class="prev">Previous - 8hrs</div>
+        </div>
+      </div>
+
+      <div id="study">
+        <img src="./images/icon-study.svg" alt="study" />
+        <div id="study-details">
+          <div class="title">Study</div>
+          4hrs
+          <!-- weekly -->
+          Previous - 7hrs
+          <!-- weekly -->
+        </div>
+      </div>
+
+      <div id="exercise">
+        <img src="./images/icon-exercise.svg" alt="exercise" />
+        <div id="exercise-details">
+          <div class="title">Exercise</div>
+          1hr
+          <!-- daily -->
+          4hrs
+          <!-- weekly -->
+          Previous - 5hrs
+          <!-- weekly -->
+        </div>
+      </div>
+
+      <div id="social">
+        <img src="./images/icon-social.svg" alt="social" />
+        <div id="social-details">
+          <div class="title">Social</div>
+          5hrs
+          <!-- weekly -->
+          Previous - 10hrs
+          <!-- weekly -->
+        </div>
+      </div>
+
+      <div id="self-care">
+        <img src="./images/icon-self-care.svg" alt="self-care" />
+        <div id="self-care-details">
+          <div class="title">Self Care</div>
+          2hrs
+          <!-- weekly -->
+          Previous - 2hrs
+          <!-- weekly -->
+        </div>
+      </div>
+    </div>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Sabir Mohammedi Taieb</a>.
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+
+body {
+  background-color: #0d1323;
+  color: white;
+  font-size: 18px;
+}
+
+h1,
+h4 {
+  font-weight: 150;
+}
+
+.time-btn {
+  background-color: #1d204b;
+  color: #6668ae;
+  border-style: hidden;
+  font-size: 18px;
+}
+
+.time-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#container {
+  /* margin-top: 25%; */
+  margin-top: 10%;
+  margin-right: 25%;
+  margin-left: 25%;
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-auto-flow: column;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 50%;
+}
+
+#container > div {
+  display: grid;
+  border-radius: 10%;
+  /* padding: 25px; */
+  background-color: #1d204b;
+  width: 100%;
+  height: 100%;
+}
+
+.attribution {
+  margin: 5%;
+}
+
+#report {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
+#work {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-row: 1/2;
+  grid-column: 2/3;
+  background-color: aquamarine;
+}
+#work-details {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column: 1/3;
+  grid-row: 2/5;
+  border-radius: 15px;
+  height: 100%;
+  width: 100%;
+  padding: 15px;
+  background-color: #1d204b;
+}
+
+.options {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+.options:hover {
+  cursor: pointer;
+}
+
+#play {
+  grid-row: 1/2;
+  grid-column: 3/4;
+  width: 100%;
+  height: 100%;
+}
+
+#profile-pic {
+  background-color: white;
+  /* height: 50%; */
+  width: 50%;
+  border-radius: 50%;
+  /* outline-color: white; */
+  stroke: white;
+  border: 5px solid white;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#report-id {
+  display: grid;
+  /* margin: 10px; */
+  border-radius: 20px;
+  height: 80%;
+  width: 100%;
+  padding: 25px;
+  background-color: #5746ea;
+}
+
+#time-selection {
+  /* margin: 10px; */
+  display: grid;
+  padding: 25px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column: 1/2;
+  grid-row: 2/3;
+  /* justify-self: baseline; */
+}
+
+#play-details {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 20px;
+  height: 50%;
+  padding: 25px;
+  background-color: #1d204b;
+}
+
+#social-details {
+  border-radius: 20px;
+  height: 50%;
+  padding: 25px;
+  background-color: #1d204b;
+}
+
+#study-details {
+  border-radius: 20px;
+  height: 50%;
+  padding: 25px;
+  background-color: #1d204b;
+}
+
+#exercise-details {
+  border-radius: 20px;
+  height: 50%;
+  padding: 25px;
+  background-color: #1d204b;
+}
+
+#self-care-details {
+  border-radius: 20px;
+  height: 50%;
+  padding: 25px;
+  background-color: #1d204b;
+}
+
+.time {
+  font-size: larger;
+  grid-row: 2/3;
+}
+
+.prev {
+  font-size: small;
+  font-weight: lighter;
+  grid-row: 3/4;
+}
+
+.title {
+  font-weight: 100;
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+@media (max-width: 500px) {
+  #container {
+    margin: 5%;
+    width: 90%;
+  }
+
+  .title {
+    font-weight: 100;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
+
+  #report {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  #time-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #work {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+  #play {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  #social {
+    grid-row: 4/5;
+    grid-column: 1/2;
+  }
+  #study {
+    grid-row: 5/6;
+    grid-column: 1/2;
+  }
+  #exercise {
+    grid-row: 6/7;
+    grid-column: 1/2;
+  }
+  #self-care {
+    grid-row: 7/8;
+    grid-column: 1/2;
+  }
+
+  #work-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 5px; */
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    /* overflow-y: scroll; */
+    /* padding-bottom: 25px; */
+    background-color: #1d204b;
+  }
+  .prev {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    margin-top: 20px;
+    margin-right: 5px;
+  }
+  .time {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 5px;
+  }
+
+  .options {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    justify-self: end;
+  }
+}
