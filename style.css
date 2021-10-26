@@ -464,3 +464,32 @@ h4 {
     justify-self: end;
   }
 }
+
+@media screen and (max-width: 568px) and (orientation: landscape) {
+  /* * {
+    margin: 0;
+    padding: 0;
+  } */
+
+  /* body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  } */
+
+  #container {
+    margin: 0;
+    position: absolute;
+    left: 20%;
+    top: 0;
+    transform: scale(0.5, 0.5);
+    /* float: right; */
+  }
+
+  .attribution {
+    transform: scale(0.5, 0.5);
+    position: absolute;
+    top: 85%;
+    left: 15%;
+  }
+}
