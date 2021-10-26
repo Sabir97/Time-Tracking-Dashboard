@@ -465,7 +465,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 568px) and (orientation: landscape) {
+@media screen and (max-width: 668px) and (orientation: landscape) {
   /* * {
     margin: 0;
     padding: 0;
@@ -490,6 +490,17 @@ h4 {
     transform: scale(0.5, 0.5);
     position: absolute;
     top: 85%;
-    left: 15%;
+    left: 22%;
+  }
+}
+
+@media screen and (max-width: 569px) and (orientation: landscape) {
+  #container {
+    margin: auto;
+    transform: scale(0.4, 0.4);
+  }
+
+  .attribution {
+    margin: auto;
   }
 }
