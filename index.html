@@ -41,18 +41,18 @@
         </div>
 
         <div id="time-selection">
-          <div class="time-btn">Daily</div>
-          <div class="time-btn" style="color: white">Weekly</div>
-          <div class="time-btn">Monthly</div>
+          <div id="daily-btn" class="time-btn">Daily</div>
+          <div id="weekly-btn" class="time-btn">Weekly</div>
+          <div id="monthly-btn" class="time-btn">Monthly</div>
         </div>
       </div>
 
       <div id="work">
-        <img class="icon" src="./images/icon-work.svg" alt="" />
+        <img class="icon" src="./images/icon-work.svg" alt="Work icon" />
         <div id="work-details">
           <div class="title">Work</div>
           <div class="options">...</div>
-          <div class="time">5hrs</div>
+          <div id="work-current" class="time">5hrs</div>
           <div class="prev">Last Day - 7hrs</div>
         </div>
       </div>
@@ -62,7 +62,7 @@
         <div id="play-details">
           <div class="title">Play</div>
           <div class="options">...</div>
-          <div class="time">10hrs</div>
+          <div id="play-current" class="time">10hrs</div>
           <div class="prev">Previous - 8hrs</div>
         </div>
       </div>
@@ -72,7 +72,7 @@
         <div id="study-details">
           <div class="title">Study</div>
           <div class="options">...</div>
-          <div class="time">4hrs</div>
+          <div id="study-current" class="time">4hrs</div>
           <div class="prev">Previous - 7hrs</div>
         </div>
       </div>
@@ -81,12 +81,9 @@
         <img class="icon" src="./images/icon-exercise.svg" alt="exercise" />
         <div id="exercise-details">
           <div class="title">Exercise</div>
-          <div class="time">4hrs</div>
+          <div id="exercise-current" class="time">4hrs</div>
           <div class="options">...</div>
           <div class="prev">Previous - 5hrs</div>
-          <!-- daily -->
-          <!-- weekly -->
-          <!-- weekly -->
         </div>
       </div>
 
@@ -94,7 +91,7 @@
         <img class="icon" src="./images/icon-social.svg" alt="social" />
         <div id="social-details">
           <div class="title">Social</div>
-          <div class="time">5hrs</div>
+          <div id="social-current" class="time">5hrs</div>
           <div class="options">...</div>
           <div class="prev">Previous - 10hrs</div>
           <!-- weekly -->
@@ -106,7 +103,7 @@
         <img class="icon" src="./images/icon-self-care.svg" alt="self-care" />
         <div id="self-care-details">
           <div class="title">Self Care</div>
-          <div class="time">2hrs</div>
+          <div id="self-care-current" class="time">2hrs</div>
           <div class="options">...</div>
           <div class="prev">Previous - 2hrs</div>
         </div>
@@ -119,5 +116,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Sabir Mohammedi Taieb</a>.
     </footer>
+
+    <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>

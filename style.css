@@ -18,12 +18,25 @@ h4 {
   background-color: #1d204b;
   color: #6668ae;
   font-size: 18px;
+  height: 30%;
+  width: 43%;
 }
 
 .time-btn:hover {
   color: white;
+  /* text-decoration-color: white; */
   cursor: pointer;
 }
+
+/* #daily-btn:hover {
+  color: white;
+}
+#weekly-btn:hover {
+  color: white;
+}
+#monthly-btn:hover {
+  color: white;
+} */
 
 #container {
   margin-top: 5%;
@@ -84,7 +97,6 @@ h4 {
 }
 
 #time-selection:hover {
-  cursor: pointer;
   background-color: #1d204b;
 }
 
